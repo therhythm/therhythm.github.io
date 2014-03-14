@@ -1,24 +1,24 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-03-07 22:06:09
-categories: jekyll update
+title: "Problem of the Day: 2014-03-13"
+date: 2014-03-13 12:00:00
+categories: problemoftheday javascript alwaysbecoding
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+## Problem  
+### No Divide [problemotd.com/problem/no-divide][potd]  
+No this isn't a reference to that Linkin Park song. Today's your Introduction to Computer Science mid-term. You're doing alright on the test and the last question is "implement a function that takes in 2 integers and returns the division of the 2 numbers rounded to the nearest integer".  
+Piece of cake you say. As you're typing it up you exclaim "what the heck", which gets you some really weird stares. You've just learned that your "/" key is broken. Some of you that are having a really bad day learn that your "/", "*", "+", and "-" are all broken. How can we solve this problem without using any of your broken keys? Note: You're using a pirated version of Windows 2015 so your copy and paste functionality is also broken.  
+## Solution  
+### No '/' key  
+{% highlight javascript %}
+(function division(nominator, denominator) {
+    var roundedDivision = Math.round(Math.pow(denominator, -1) * nominator);
+})(5,2);
+{% endhighlight %}
+### No '/', '*', '+' or '-' key  
+{% highlight javascript %}
+Not yet solved.
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+[potd]: http://www.problemotd.com/problem/no-divide/
