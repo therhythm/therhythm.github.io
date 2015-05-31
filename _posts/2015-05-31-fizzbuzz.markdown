@@ -1,0 +1,38 @@
+---
+layout: post
+title: "FizzBuzz solution"
+date: 2015-05-31 12:00:00
+categories: interviewquestions java alwaysbecoding
+---
+
+## Problem  
+### FizzBuzz
+The FizzBuzz problem is an interview question that has been making the rounds on sites like Hacker News recently. It is a fairly simple test to check for basic programming skills. People have come up with all kinds of way of solving the problem, below is one way to solve this in Java.
+## Solution
+{% highlight java %}
+public class FizzBuzz {
+
+        public static void main(String[] args) {
+               int multipleThree = 0;
+               int multipleFive = 0;
+
+               for (int i = 1; i <= 100; i++) {
+                      multipleThree++;
+                      multipleFive++;
+
+                      if (multipleThree == 3) multipleThree = 0;
+                      if (multipleFive == 5) multipleFive = 0;
+
+                      if (multipleThree == 0 && multipleFive == 0) {
+                           System. out.println("FizzBuzz" );
+                     } else if (multipleThree == 0) {
+                           System. out.println("Fizz" );
+                     } else if (multipleFive == 0) {
+                           System. out.println("Buzz" );
+                     } else {
+                           System. out.println(i );
+                     }
+              }
+       }
+
+}
